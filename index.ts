@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { Empleado } from "./model/Empleado";
-import { Persona } from "./model/Persona";
+import { Persona, EstadoCivil } from "./model/Persona";
 import { Direccion } from "./interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./model/Vehiculo";
 import { json } from 'stream/consumers';
@@ -19,16 +19,16 @@ const ducati = new Moto("Ducati Italia", 1990);
 const apriliaRS = new Moto("Aprilla Racing Stack", 2020);
 const kawasakiNx = new Moto("Kawasaki NX", 2021);
 
-const persona = new Persona({ nombre: "Walter White", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ferrari, suburban] }, 55,);
-const personaUno = new Persona({ nombre: "Saul Goodman", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ducati] }, 42);
-const personaDos = new Persona({ nombre: "Jesse Pinkman", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [yamaha, ducati] }, 31);
-const personaTres = new Persona({ nombre: "Gus Fring", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, apriliaRS] }, 59);
-const personaCuatro = new Persona({ nombre: "Elba lazo", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [ferrari, yamaha] }, 29,);
-const personaQuinta = new Persona({ nombre: "Elza pato", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [suburban, ducati] }, 30);
-const personaSexta = new Persona({ nombre: "Juancho Carrancho", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [yamaha, bmw] }, 31,);
-const personaSeptima = new Persona({ nombre: "Hank Schrader", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [kawasakiNx, apriliaRS] }, 57);
-const personaOctava = new Persona({ nombre: "Thrall shaman supremo", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [nissanGTR, ducati] }, 33);
-const personaNovena = new Persona({ nombre: "Elvis Tek", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [suburban, apriliaRS] }, 34,);
+const persona = new Persona({ nombre: "Walter White", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ferrari, suburban], estadoCivil: EstadoCivil.Casado }, 55,);
+const personaUno = new Persona({ nombre: "Saul Goodman", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ducati], estadoCivil: EstadoCivil.Soltero }, 42);
+const personaDos = new Persona({ nombre: "Jesse Pinkman", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [yamaha, ducati], estadoCivil: EstadoCivil.Soltero }, 31);
+const personaTres = new Persona({ nombre: "Gus Fring", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, apriliaRS], estadoCivil: EstadoCivil.Soltero }, 59);
+const personaCuatro = new Persona({ nombre: "Elba lazo", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [ferrari, yamaha], estadoCivil: EstadoCivil.Soltero }, 29,);
+const personaQuinta = new Persona({ nombre: "Elza pato", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [suburban, ducati], estadoCivil: EstadoCivil.Soltero }, 30);
+const personaSexta = new Persona({ nombre: "Juancho Carrancho", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [yamaha, bmw], estadoCivil: EstadoCivil.Soltero }, 31,);
+const personaSeptima = new Persona({ nombre: "Hank Schrader", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [kawasakiNx, apriliaRS], estadoCivil: EstadoCivil.Soltero }, 57);
+const personaOctava = new Persona({ nombre: "Thrall shaman supremo", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [nissanGTR, ducati], estadoCivil: EstadoCivil.Soltero }, 33);
+const personaNovena = new Persona({ nombre: "Elvis Tek", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [suburban, apriliaRS], estadoCivil: EstadoCivil.Soltero }, 34,);
 
 
 arrPersonas.push(persona, personaUno, personaDos, personaTres, personaCuatro, personaQuinta, personaSexta, personaSeptima, personaOctava, personaNovena);
@@ -120,3 +120,7 @@ const ObjToJson = (arr: any) => {
 }
 
 //ObjToJson(arrEmpleados); Convertir a las instancias de Empleado en formato JSON
+
+//Punto nro #14
+
+const personaNueva = new Persona({ nombre: "Pedro", direccion: { calle: "45 con septima", ciudad: "Bogota", pais: "Colombia" }, vehiculos: [bmw], estadoCivil: EstadoCivil.Casado }, 55)

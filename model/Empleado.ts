@@ -1,9 +1,9 @@
-import { Persona } from "./Persona";
+import { Persona, EstadoCivil } from "./Persona";
 import { Direccion } from "../interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./Vehiculo";
 
 export class Empleado extends Persona {
-    constructor(infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[] }, edad: number, public salario: number) {
+    constructor(infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[], estadoCivil: EstadoCivil }, edad: number, public salario: number) {
         super(infoPersona, edad);
     }
 

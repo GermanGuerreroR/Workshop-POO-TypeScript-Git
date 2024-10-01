@@ -1,8 +1,14 @@
 import { Direccion } from "../interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./Vehiculo";
 
+export enum EstadoCivil {
+    "Soltero" = "Soltero",
+    "Casado" = "Casado",
+    "Divorciado" = "Divorciado"
+}
+
 export class Persona {
-    constructor(public infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[] }, private edad: number,) { };
+    constructor(public infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[], estadoCivil: EstadoCivil }, private edad: number,) { };
 
     saludar(): void {
         console.log(`Tú nombre es ${this.infoPersona.nombre} y tienes ${this.edad} años`);
