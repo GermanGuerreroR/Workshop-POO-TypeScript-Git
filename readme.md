@@ -25,3 +25,5 @@
 - Los commits empiezan desde el ejercicio número 2. --> Primer commit Ejercicio nro #2 hasta el 18. Total commit 17. 
 
 - Para obtener la dirección de los empleados y personas se agrego un método _obtenerDireccion()_ en la clase Persona.
+
+- Se le agrega atributos a la clase abstracta _Vehiculo_ con el proposito de facilitar la serialización de la lista de las 10 instancias de empleado.

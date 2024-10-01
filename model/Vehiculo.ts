@@ -1,4 +1,8 @@
 export abstract class Vehiculo {
+
+    constructor(public marca: string, public modelo: number) { }
+
+
     arrancar(): void { };
 }
 

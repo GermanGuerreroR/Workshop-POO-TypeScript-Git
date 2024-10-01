@@ -1,0 +1,226 @@
+[
+  {
+    "infoPersona": {
+      "nombre": "Walter White",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "bmw B3",
+          "modelo": 2021
+        },
+        {
+          "marca": "Ferrari Spider",
+          "modelo": 2018
+        },
+        {
+          "marca": "Suburban cadilac",
+          "modelo": 2024
+        }
+      ]
+    },
+    "edad": 55,
+    "salario": 5000
+  },
+  {
+    "infoPersona": {
+      "nombre": "Saul Goodman",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "bmw B3",
+          "modelo": 2021
+        },
+        {
+          "marca": "Ducati Italia",
+          "modelo": 1990
+        }
+      ]
+    },
+    "edad": 42,
+    "salario": 6500
+  },
+  {
+    "infoPersona": {
+      "nombre": "Jesse Pinkman",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Yamaha R6",
+          "modelo": 2024
+        },
+        {
+          "marca": "Ducati Italia",
+          "modelo": 1990
+        }
+      ]
+    },
+    "edad": 31,
+    "salario": 7540
+  },
+  {
+    "infoPersona": {
+      "nombre": "Gus Fring",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "bmw B3",
+          "modelo": 2021
+        },
+        {
+          "marca": "Aprilla Racing Stack",
+          "modelo": 2020
+        }
+      ]
+    },
+    "edad": 59,
+    "salario": 4781
+  },
+  {
+    "infoPersona": {
+      "nombre": "Elba lazo",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Ferrari Spider",
+          "modelo": 2018
+        },
+        {
+          "marca": "Yamaha R6",
+          "modelo": 2024
+        }
+      ]
+    },
+    "edad": 29,
+    "salario": 5984
+  },
+  {
+    "infoPersona": {
+      "nombre": "Elza pato",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Suburban cadilac",
+          "modelo": 2024
+        },
+        {
+          "marca": "Ducati Italia",
+          "modelo": 1990
+        }
+      ]
+    },
+    "edad": 30,
+    "salario": 5751
+  },
+  {
+    "infoPersona": {
+      "nombre": "Juancho Carrancho",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Yamaha R6",
+          "modelo": 2024
+        },
+        {
+          "marca": "bmw B3",
+          "modelo": 2021
+        }
+      ]
+    },
+    "edad": 31,
+    "salario": 5757
+  },
+  {
+    "infoPersona": {
+      "nombre": "Hank Schrader",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Kawasaki NX",
+          "modelo": 2021
+        },
+        {
+          "marca": "Aprilla Racing Stack",
+          "modelo": 2020
+        }
+      ]
+    },
+    "edad": 57,
+    "salario": 4750
+  },
+  {
+    "infoPersona": {
+      "nombre": "Thrall shaman supremo",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Nissa GTR turbo",
+          "modelo": 1997
+        },
+        {
+          "marca": "Ducati Italia",
+          "modelo": 1990
+        }
+      ]
+    },
+    "edad": 33,
+    "salario": 5749
+  },
+  {
+    "infoPersona": {
+      "nombre": "Elvis Tek",
+      "direccion": {
+        "calle": "308 de Negra Arroyo Lane",
+        "ciudad": "Albuquerque",
+        "pais": "EEUU"
+      },
+      "vehiculos": [
+        {
+          "marca": "Suburban cadilac",
+          "modelo": 2024
+        },
+        {
+          "marca": "Aprilla Racing Stack",
+          "modelo": 2020
+        }
+      ]
+    },
+    "edad": 34,
+    "salario": 7899
+  }
+]

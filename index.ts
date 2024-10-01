@@ -1,21 +1,23 @@
+import * as fs from 'fs';
 import { Empleado } from "./model/Empleado";
 import { Persona } from "./model/Persona";
 import { Direccion } from "./interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./model/Vehiculo";
+import { json } from 'stream/consumers';
 
 // //Punto nro # 3 y Punto nro # 11
 
 const arrPersonas: Persona[] = [];
 
-const bmw = new Coche();
-const ferrari = new Coche();
-const suburban = new Coche();
-const nissanGTR = new Coche();
+const bmw = new Coche("bmw B3", 2021);
+const ferrari = new Coche("Ferrari Spider", 2018);
+const suburban = new Coche("Suburban cadilac", 2024);
+const nissanGTR = new Coche("Nissa GTR turbo", 1997);
 
-const yamaha = new Moto();
-const ducati = new Moto();
-const apriliaRS = new Moto();
-const kawasakiNx = new Moto();
+const yamaha = new Moto("Yamaha R6", 2024);
+const ducati = new Moto("Ducati Italia", 1990);
+const apriliaRS = new Moto("Aprilla Racing Stack", 2020);
+const kawasakiNx = new Moto("Kawasaki NX", 2021);
 
 const persona = new Persona({ nombre: "Walter White", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ferrari, suburban] }, 55,);
 const personaUno = new Persona({ nombre: "Saul Goodman", direccion: { calle: "308 de Negra Arroyo Lane", ciudad: "Albuquerque", pais: "EEUU" }, vehiculos: [bmw, ducati] }, 42);
@@ -89,3 +91,11 @@ for (let empleado of arrEmpleados) {
 
 //Punto nro #9 se exporta la primera instancia creada de persona
 
+
+//Punto nro #12 agrego dos atributos a la clase Vehiculo para facilitar la serialización de las instancias de empleado. 
+
+console.log(empleado.infoPersona.vehiculos);
+
+
+const listaEmpleadosJSON = JSON.stringify(arrEmpleados, null, 2);
+fs.writeFileSync('./JSON/empleados.json', listaEmpleadosJSON, 'utf-8');
