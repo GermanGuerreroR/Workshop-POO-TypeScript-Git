@@ -27,3 +27,5 @@
 - Para obtener la dirección de los empleados y personas se agrego un método _obtenerDireccion()_ en la clase Persona.
 
 - Se le agrega atributos a la clase abstracta _Vehiculo_ con el proposito de facilitar la serialización de la lista de las 10 instancias de empleado.
+
+- Punto 12 y 13 están realizado con File System Module. Con mi solución punto 12 y 13 son practicamente lo mismo. Aun así se realizaron las funciones.

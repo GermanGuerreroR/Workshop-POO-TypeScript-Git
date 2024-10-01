@@ -69,6 +69,8 @@ const empleadoSeptimo = new Empleado(personaSeptima.infoPersona, personaSeptima.
 const empleadoOctavo = new Empleado(personaOctava.infoPersona, personaOctava.getEdad(), 5749);
 const empleadoNoveno = new Empleado(personaNovena.infoPersona, personaNovena.getEdad(), 7899);
 
+
+
 arrEmpleados.push(empleadoCero, empleadoUno, empleadoDos, empleadoTres, empleadoCuatro, empleadoQuinto, empleadoSexto, empleadoSeptimo, empleadoOctavo, empleadoNoveno);
 
 for (let empleado of arrEmpleados) {
@@ -99,3 +101,22 @@ console.log(empleado.infoPersona.vehiculos);
 
 const listaEmpleadosJSON = JSON.stringify(arrEmpleados, null, 2);
 fs.writeFileSync('./JSON/empleados.json', listaEmpleadosJSON, 'utf-8');
+
+
+//Punto nro #13 
+
+//Funcion para volverlos objetos
+
+const JSONToObj = (): Empleado[] => {
+    const empleadosFormatJSON = fs.readFileSync('./JSON/empleados.json', 'utf-8');
+    return JSON.parse(empleadosFormatJSON);
+}
+
+//Funcion para volverlos JSON
+
+const ObjToJson = (arr: any) => {
+    fs.writeFileSync('./JSON/empleados.json', arr, 'utf-8');
+    console.log("Convertidos en JSON!");
+}
+
+//ObjToJson(arrEmpleados); Convertir a las instancias de Empleado en formato JSON
