@@ -1,12 +1,13 @@
 import { Persona } from "./Persona";
+import { Direccion } from "../interfaces/Direccion";
 
 export class Empleado extends Persona {
-    constructor(public nombre: string, edad: number, public salario: number) {
-        super(nombre, edad)
+    constructor(infoPersona: { nombre: string, direccion: Direccion }, edad: number, public salario: number) {
+        super(infoPersona, edad);
     }
 
     override saludar(): void {
-        console.log(`Tú nombre es ${this.nombre} y tienes ${this.getEdad()} años \n y el salario es de $${this.salario}`);
+        console.log(`Tú nombre es ${this.infoPersona.nombre} y tienes ${this.getEdad()} años \n y el salario es de $${this.salario}`);
     }
 
     trabajar(horasTrabajadas: number): void {
