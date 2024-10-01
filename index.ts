@@ -1,3 +1,4 @@
+import { Empleado } from "./model/Empleado";
 import { Persona } from "./model/Persona";
 
 
@@ -27,3 +28,12 @@ for (let persona of arrPersonas) {
 //Punto nro # 4
 
 console.log(persona.getEdad());
+
+
+//Punto nro # 5
+
+const empleado = new Empleado(persona.nombre, persona.getEdad(), 500000000);
+
+empleado.trabajar(6);
+
+
