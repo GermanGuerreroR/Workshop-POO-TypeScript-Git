@@ -5,6 +5,10 @@ export class Empleado extends Persona {
         super(nombre, edad)
     }
 
+    override saludar(): void {
+        console.log(`Tú nombre es ${this.nombre} y tienes ${this.getEdad()} años \n y el salario es de $${this.salario}`);
+    }
+
     trabajar(horasTrabajadas: number): void {
         const dias: { [key: number]: string } = {
             0: "domingo",

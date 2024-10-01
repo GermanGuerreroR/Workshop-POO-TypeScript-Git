@@ -36,4 +36,5 @@ const empleado = new Empleado(persona.nombre, persona.getEdad(), 500000000);
 
 empleado.trabajar(6);
 
-
+// Punto nro # 6
+empleado.saludar();
