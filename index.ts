@@ -75,3 +75,6 @@ for (let empleado of arrEmpleados) {
 
     empleado.obtenerDireccion();
 }
+
+//Punto nro #9 se exporta la primera instancia creada de persona
+

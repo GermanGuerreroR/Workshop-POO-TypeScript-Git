@@ -24,4 +24,4 @@
 
 - Los commits empiezan desde el ejercicio número 2. --> Primer commit Ejercicio nro #2 hasta el 18. Total commit 17. 
 
-- Para obtener la dirección de los empleados y personas se agrego un método _  obtenerDireccion()_ en la clase Persona.
+- Para obtener la dirección de los empleados y personas se agrego un método _obtenerDireccion()_ en la clase Persona.
