@@ -4,6 +4,8 @@ import { Persona, EstadoCivil } from "./model/Persona";
 import { Direccion } from "./interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./model/Vehiculo";
 import { json } from 'stream/consumers';
+import { Empresa } from './model/Empresa-';
+
 
 // //Punto nro # 3 y Punto nro # 11
 
@@ -124,3 +126,20 @@ const ObjToJson = (arr: any) => {
 //Punto nro #14
 
 const personaNueva = new Persona({ nombre: "Pedro", direccion: { calle: "45 con septima", ciudad: "Bogota", pais: "Colombia" }, vehiculos: [bmw], estadoCivil: EstadoCivil.Casado }, 55)
+
+
+//Punto nro #15
+
+const empresaUno = new Empresa([]);
+
+empresaUno.agregarEmpleado(empleadoCero);
+empresaUno.agregarEmpleado(empleadoUno);
+empresaUno.agregarEmpleado(empleadoDos);
+
+try {
+    empresaUno.eliminarEmpleado("pepe");
+} catch (error: any) {
+    error;
+}
+
+console.log(empresaUno.calcularTotalSalarios());

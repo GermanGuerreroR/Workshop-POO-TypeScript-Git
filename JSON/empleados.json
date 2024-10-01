@@ -20,7 +20,8 @@
           "marca": "Suburban cadilac",
           "modelo": 2024
         }
-      ]
+      ],
+      "estadoCivil": "Casado"
     },
     "edad": 55,
     "salario": 5000
@@ -42,7 +43,8 @@
           "marca": "Ducati Italia",
           "modelo": 1990
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 42,
     "salario": 6500
@@ -64,7 +66,8 @@
           "marca": "Ducati Italia",
           "modelo": 1990
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 31,
     "salario": 7540
@@ -86,7 +89,8 @@
           "marca": "Aprilla Racing Stack",
           "modelo": 2020
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 59,
     "salario": 4781
@@ -108,7 +112,8 @@
           "marca": "Yamaha R6",
           "modelo": 2024
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 29,
     "salario": 5984
@@ -130,7 +135,8 @@
           "marca": "Ducati Italia",
           "modelo": 1990
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 30,
     "salario": 5751
@@ -152,7 +158,8 @@
           "marca": "bmw B3",
           "modelo": 2021
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 31,
     "salario": 5757
@@ -174,7 +181,8 @@
           "marca": "Aprilla Racing Stack",
           "modelo": 2020
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 57,
     "salario": 4750
@@ -196,7 +204,8 @@
           "marca": "Ducati Italia",
           "modelo": 1990
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 33,
     "salario": 5749
@@ -218,7 +227,8 @@
           "marca": "Aprilla Racing Stack",
           "modelo": 2020
         }
-      ]
+      ],
+      "estadoCivil": "Soltero"
     },
     "edad": 34,
     "salario": 7899
