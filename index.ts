@@ -22,3 +22,8 @@ arrPersonas.push(persona, personaUno, personaDos, personaTres, personaCuatro, pe
 for (let persona of arrPersonas) {
     persona.saludar();
 }
+
+
+//Punto nro # 4
+
+console.log(persona.getEdad());
