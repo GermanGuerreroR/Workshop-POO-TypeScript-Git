@@ -29,3 +29,5 @@
 - Se le agrega atributos a la clase abstracta _Vehiculo_ con el proposito de facilitar la serialización de la lista de las 10 instancias de empleado.
 
 - Punto 12 y 13 están realizado con File System Module. Con mi solución punto 12 y 13 son practicamente lo mismo. Aun así se realizaron las funciones.
+
+- El punto 16 las clases se agregan a un arreglo dependiendo del cargo. Se hace manera hago la relación con la clase _Empleado_

@@ -5,7 +5,7 @@ import { Direccion } from "./interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./model/Vehiculo";
 import { json } from 'stream/consumers';
 import { Empresa } from './model/Empresa-';
-
+import { Proyecto } from './model/Proyecto';
 
 // //Punto nro # 3 y Punto nro # 11
 
@@ -48,7 +48,7 @@ console.log(persona.getEdad());
 
 //Punto nro # 5
 
-const empleado = new Empleado(persona.infoPersona, persona.getEdad(), 5000000);
+const empleado = new Empleado(persona.infoPersona, persona.getEdad(), { salario: 500000, cargo: "Jefe" });
 
 empleado.trabajar(6);
 
@@ -60,16 +60,16 @@ empleado.saludar();
 
 const arrEmpleados: Empleado[] = [];
 
-const empleadoCero = new Empleado(persona.infoPersona, persona.getEdad(), 5000);
-const empleadoUno = new Empleado(personaUno.infoPersona, personaUno.getEdad(), 6500);
-const empleadoDos = new Empleado(personaDos.infoPersona, personaDos.getEdad(), 7540);
-const empleadoTres = new Empleado(personaTres.infoPersona, personaTres.getEdad(), 4781);
-const empleadoCuatro = new Empleado(personaCuatro.infoPersona, personaCuatro.getEdad(), 5984);
-const empleadoQuinto = new Empleado(personaQuinta.infoPersona, personaQuinta.getEdad(), 5751);
-const empleadoSexto = new Empleado(personaSexta.infoPersona, personaSexta.getEdad(), 5757);
-const empleadoSeptimo = new Empleado(personaSeptima.infoPersona, personaSeptima.getEdad(), 4750);
-const empleadoOctavo = new Empleado(personaOctava.infoPersona, personaOctava.getEdad(), 5749);
-const empleadoNoveno = new Empleado(personaNovena.infoPersona, personaNovena.getEdad(), 7899);
+const empleadoCero = new Empleado(persona.infoPersona, persona.getEdad(), { salario: 500000, cargo: "Cocinero" });
+const empleadoUno = new Empleado(personaUno.infoPersona, personaUno.getEdad(), { salario: 6500, cargo: "Cocinero" });
+const empleadoDos = new Empleado(personaDos.infoPersona, personaDos.getEdad(), { salario: 7540, cargo: "Cocinero" });
+const empleadoTres = new Empleado(personaTres.infoPersona, personaTres.getEdad(), { salario: 4781, cargo: "Cocinero" });
+const empleadoCuatro = new Empleado(personaCuatro.infoPersona, personaCuatro.getEdad(), { salario: 5984, cargo: "Dev Backend" });
+const empleadoQuinto = new Empleado(personaQuinta.infoPersona, personaQuinta.getEdad(), { salario: 5751, cargo: "Dev Backend" });
+const empleadoSexto = new Empleado(personaSexta.infoPersona, personaSexta.getEdad(), { salario: 5757, cargo: "Dev Backend" });
+const empleadoSeptimo = new Empleado(personaSeptima.infoPersona, personaSeptima.getEdad(), { salario: 4750, cargo: "Dev Backend" });
+const empleadoOctavo = new Empleado(personaOctava.infoPersona, personaOctava.getEdad(), { salario: 5749, cargo: "Frontend Dev" });
+const empleadoNoveno = new Empleado(personaNovena.infoPersona, personaNovena.getEdad(), { salario: 7899, cargo: "Frontend Dev" });
 
 
 
@@ -101,8 +101,8 @@ for (let empleado of arrEmpleados) {
 console.log(empleado.infoPersona.vehiculos);
 
 
-const listaEmpleadosJSON = JSON.stringify(arrEmpleados, null, 2);
-fs.writeFileSync('./JSON/empleados.json', listaEmpleadosJSON, 'utf-8');
+// const listaEmpleadosJSON = JSON.stringify(arrEmpleados, null, 2);
+// fs.writeFileSync('./JSON/empleados.json', listaEmpleadosJSON, 'utf-8');
 
 
 //Punto nro #13 
@@ -143,3 +143,19 @@ try {
 }
 
 console.log(empresaUno.calcularTotalSalarios());
+
+
+//Punto nro #16
+
+const proyectoUno = new Proyecto([]);
+
+console.log(proyectoUno.cocineros(empleado));
+
+console.log(proyectoUno.cocineros(empleadoCero));
+
+console.log(proyectoUno.devBack(empleadoDos));
+
+console.log(proyectoUno.frontDev(empleadoOctavo));
+
+console.log(proyectoUno.proyectoAltaIntensaidad(empleadoCuatro));
+

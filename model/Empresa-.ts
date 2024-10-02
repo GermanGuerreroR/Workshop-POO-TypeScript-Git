@@ -18,7 +18,7 @@ export class Empresa {
     calcularTotalSalarios(): number {
         let total = 0;
         for (let i = 0; i < this.empleadosEmpresa.length; i++) {
-            total += this.empleadosEmpresa[i].salario;
+            total += this.empleadosEmpresa[i].infoLaboral.salario
         }
         return total;
     }

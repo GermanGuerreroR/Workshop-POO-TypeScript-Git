@@ -3,12 +3,12 @@ import { Direccion } from "../interfaces/Direccion";
 import { Vehiculo, Coche, Moto } from "./Vehiculo";
 
 export class Empleado extends Persona {
-    constructor(infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[], estadoCivil: EstadoCivil }, edad: number, public salario: number) {
+    constructor(public infoPersona: { nombre: string, direccion: Direccion, vehiculos: Vehiculo[], estadoCivil: EstadoCivil }, edad: number, public infoLaboral: { salario: number, cargo: string }) {
         super(infoPersona, edad);
     }
 
     override saludar(): void {
-        console.log(`Tú nombre es ${this.infoPersona.nombre} y tienes ${this.getEdad()} años \n y el salario es de $${this.salario}`);
+        console.log(`Tú nombre es ${this.infoPersona.nombre} y tienes ${this.getEdad()} años \n y el salario es de $${this.infoLaboral.salario}`);
     }
 
     trabajar(horasTrabajadas: number): void {
