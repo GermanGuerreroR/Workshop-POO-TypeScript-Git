@@ -6,6 +6,7 @@ import { Vehiculo, Coche, Moto } from "./model/Vehiculo";
 import { json } from 'stream/consumers';
 import { Empresa } from './model/Empresa-';
 import { Proyecto } from './model/Proyecto';
+import { Departamento } from './model/Departamento';
 
 // //Punto nro # 3 y Punto nro # 11
 
@@ -158,4 +159,24 @@ console.log(proyectoUno.devBack(empleadoDos));
 console.log(proyectoUno.frontDev(empleadoOctavo));
 
 console.log(proyectoUno.proyectoAltaIntensaidad(empleadoCuatro));
+
+
+//Punto nro #17 
+
+const departamentoCocina = new Departamento([]);
+
+
+departamentoCocina.agregarEmpleado(empleadoDos);
+departamentoCocina.agregarEmpleado(empleadoTres);
+
+try {
+    console.log(departamentoCocina.eliminarEmpleadoDepartamento("Lucas"));
+} catch (error: any) {
+    error;
+}
+
+
+departamentoCocina.listarDepartamento();
+
+console.log(departamentoCocina.eliminarTodoDepartamento());
 
